@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #bg-video {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+  object-fit: cover; /* Ensures video scales properly */
+z-index: -1;
+        }
+
+#typer{
+    font-family: Arial, Helvetica, sans-serif;
+color: bisque;
+font-size: 3rem;
+text-align: center;
+animation: fadeExpand 12s ease forwards;
+}
+@keyframes fadeExpand {
+0% {
+    opacity: 0;
+    letter-spacing: -5px;
+}
+100% {
+    opacity: 1;
+    letter-spacing: 2px;
+}
+}
+.navcontent{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color:transparent;
+    border-top: 2px #fff;
+    border-left: 2px solid rgb(249, 249, 249); 
+    border-right: 2px solid rgb(255, 255, 255); 
+    border-bottom: 2px solid rgb(255, 255, 255); 
+    justify-content: space-between;
+    text-decoration: none;
+    max-width: 700px;
+    width: 100%;
+    max-height: 30px;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    padding: 10px;
+    a:hover {
+color: #fff;
+text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(50, 54, 54);
+}
+}
+/* general flex */
+.flex{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+/* redirect to project div */
+.redirect{
+    a{ color: #f2f4f8;}
+    display: inline-block;
+    border: 2px solid white ;
+    border-radius: 20px;
+    max-width: 200px;
+    width: 100%;
+}
+/* icons bar */
+#iconsbar{
+    width: 600px;
+    justify-content: space-between;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+/* icons div */
+.icons{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: transparent;
+    border-top: 2px  solid white;
+    border-bottom: 2px  solid white;
+    border-left: 2px  solid white;
+    border-right: 2px  solid white;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 20px;
+}
+/* =====================bordertransparent================= */
+.contentbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    border-left: 2px solid rgb(167, 160, 160); 
+    border-right: 2px solid rgb(167, 160, 160); 
+    border-bottom: 1px solid rgb(167, 160, 160); 
+    border-radius: 40px;
+    background-color: transparent;
+    margin-top: 50px;
+}
+.contentboxdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width:1200px;
+    width: 100%;
+    max-height: 380px;
+    height: 100%;
+    border-left: 2px solid rgb(167, 160, 160); 
+    border-right: 2px solid rgb(167, 160, 160); 
+    border-top: 1px solid rgb(167, 160, 160); 
+    border-bottom: 0px solid rgb(167, 160, 160); 
+    border-radius: 40px;
+    background-color: transparent;
+    margin-top: 30px;
+}
+/* ==============================font colors for contents========== */
+.fontcolor{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <video autoplay reverse muted id="bg-video">
+        <source src="/media/Orange Black Modern Welcome To My Channel Video.mp4">
+    </video>
+    <div id="typer">
+        <h1>GOWTHAM R</h1>
+        <h6 style="margin-top: 0px; padding-top: 0px;">FULLSTACK DEVELOPER</h6>
+    </div>
+    <!-- scroll part  -->
+    <div class="flex">
+        <div class="navcontent">
+        <a href="#Intro"style="color:bisque;" >Intro</a>
+        <a href="#Aboutme"style="color:bisque;">About me</a>
+        <a href="#Education"style="color:bisque;">Education</a>
+        <a href="Skills"style="color:bisque;">Skills</a>
+        <a href=""style="color:bisque;">Projects</a>
+        <a href=""style="color:bisque;">Achivements/Certifications</a>
+        <a href=""style="color:bisque;">Contact</a>
+    </div></div>
+
+    <div class="flex">
+        <div id="iconsbar">
+        <a href="https://www.linkedin.com/in/gowtham-r-695280241"><div class="icons"> <i  class="fa-brands fa-square-linkedin fa-beat-fade" style="color: #f2f4f8;"></i></i></div></a>
+        <a href="mailto:gowthamsugi8@gmail.com subject=Hiring Process Related"><div class="icons"> <i  class="fa-solid fa-envelope fa-beat-fade" style="color: #ffffff;"></i></i></div></a>
+        <a href="https://github.com/repos?q=owner%3A%40me"><div class="icons"> <i  class="fa-brands fa-github fa-beat-fade" style="color: #ffffff;"></i></i></div></a>
+    </div>
+    </div>    
+
+    <!-- intro -->
+    <section id="Intro">
+    <div class="flex"> 
+        <div class="contentbox">
+            <div class="fontcolor">
+                <h1 style="text-align: center;">INTRO</h1>
+                <h3>Hi, I’m Gowtham </h3>
+                I am an front‑end developer passionate about crafting clean, responsive, and interactive web experiences.
+                <br>
+                <br>
+                I design and build modern websites that blend minimalism with bold interactivity.
+                <br>
+                <br>
+                Turning ideas into sleek, animated interfaces that speak louder than word
+                <br>
+                <br>
+                <h2 style="text-align: center; color: antiquewhite;">Code. Design. Animate.
+                    <br>
+                    Building experiences, not just websites</h2>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Bout me -->
+    <section id="Aboutme">
+        <div class="flex">
+            <div class="contentboxdown">
+            <div class="fontcolor">
+            <h1 style="text-align: center;">About Me...🙋🏻</h1>
+            I am a Kind of person who loves to do consistently if i love it , in that way i can definetly say i love my work as a developer ,<br>
+            Which starts from minute details to making an website responsive as a "MIMOSA PUDICA"
+            <br>
+            <br>
+            In my earlydays, I am that one nerdy kid who always focused on his studies , Fortunately that helped me with my Grades
+            <br>
+            <br>
+            I always had that thrive to build something new and  Create something that is challenging and gives me chills
+            <br>
+            <br>
+            I am eager to apply my knowledge in real-world projects and grow as a professional in the tech industry.
+            <br>
+            <br>
+            <h2 style="text-align: center; color: antiquewhite;">Passionate.Consistent.Clever
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education -------------------->
+    <section id="Education">
+        <div class="flex">
+        <div class="contentboxdown">
+        <div class="fontcolor">
+            <h1 style="text-align: center;">🎓Education</h1>
+            Bachelor Of Technology<h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">ARTIFICIAL INTELLIGENCE AND DATA SCIENCE</h3>  (with CGPA OF 7.96 and No history of arrears)
+            <br>
+            <br>
+            HSC (12th) - 89%
+            <br>
+            <br>
+            SSLC (10th) - 80%
+            
+            <br>
+            <br>
+            <h2 style="text-align: center; color: antiquewhite;">Dedication.Manifestation.Perfection
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- Skills====================== -->
+    <section id="Skills">
+        <div class="flex">
+        <div class="contentboxdown">
+        <div class="fontcolor">
+            <h1 style="text-align: center;">Skills</h1>
+            <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> HYPER TEXT MARKUP LANGUAGE (HTML) <br><br>
+                CASCADING STYLE SHEET (CSS) <br><br>
+                JAVASCRIPT <br><br>
+                FIGMA <br><br>
+                PYTHON <br><br>
+                DJANGO <br><br>
+                SQL</h3>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- PROJECTS============= -->
+    <section id="Skills">
+        <div class="flex">
+        <div class="contentboxdown">
+        <div class="fontcolor">
+            <h1 style="text-align: center;">PROJECTS</h1>
+            <br> 
+            Commerce website - Designed and Deployed an fully functional Ecommerce website for my  very own entrepreneurship startup called U-cart <br>
+            where customers can buy customised Phone cases,Photo Frames,Keychains and gifts ....
+            <br>
+            <br>
+            The website is designed to act responsive and lite weight to ensure customer's enhanced usability .
+            <br>
+            <br>
+            Features - Dynamic Product lineup , Easy to order and userfriendly
+            <br><br>
+            <div class="redirect">
+                <a href="" >
+                Redirect to Project
+                </a>
+            </div>
+            <br>
+            <br>
+            Data analysis - Done Data analysis for mobile showroom (Karur Chennai Mobiles ),Started 
+        </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
